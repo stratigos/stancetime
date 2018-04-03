@@ -1,5 +1,9 @@
 # Stancetime
 
+ * This application is under construction :construction_worker:
+
+----
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
