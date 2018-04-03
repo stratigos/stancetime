@@ -10,7 +10,7 @@ config :stancetime, StancetimeWeb.Endpoint,
   url: [host: "example.com", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
-config :stancetime, StancetimeWeb.Repo,
+config :stancetime, Stancetime.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: "${DATABASE_URL}",
   database: "",
