@@ -1,6 +1,8 @@
-# Stancetime
+# StanceTime
 
  * This application is under construction :construction_worker:
+
+StanceTime is an application that helps martial artists improve their stance work. This application allows a user to track and record times, view a history of their sessions spent in a stance, and get a visualization of where improvements can be made and records can be topped. 
 
 ----
 
