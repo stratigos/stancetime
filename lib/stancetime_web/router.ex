@@ -14,13 +14,25 @@ defmodule StancetimeWeb.Router do
   end
 
   scope "/", StancetimeWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
+    # Serve an SPA
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", StancetimeWeb do
-  #   pipe_through :api
-  # end
+  scope "/admin", StancetimeWeb.Admin, as: :admin do
+    pipe_through :browser
+
+    resources "/stances", StanceController
+  end
+
+  scope "/api", StancetimeWeb.Api, as: :api do
+    pipe_through :api
+
+    scope "/v1", V1, as: :v1 do
+      resources "/stances", StanceController, only: [:index, :show]
+    end
+
+  end
+W
 end
