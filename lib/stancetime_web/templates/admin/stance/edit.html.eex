@@ -1,0 +1,5 @@
+<h2>Edit Stance</h2>
+
+<%= render "form.html", Map.put(assigns, :action, admin_stance_path(@conn, :update, @stance)) %>
+
+<span><%= link "Back", to: admin_stance_path(@conn, :index) %></span>

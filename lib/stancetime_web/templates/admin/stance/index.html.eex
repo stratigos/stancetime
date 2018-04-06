@@ -1,0 +1,28 @@
+<h2>Listing Stances</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for stance <- @stances do %>
+    <tr>
+      <td><%= stance.name %></td>
+      <td><%= stance.description %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: admin_stance_path(@conn, :show, stance), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: admin_stance_path(@conn, :edit, stance), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: admin_stance_path(@conn, :delete, stance), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Stance", to: admin_stance_path(@conn, :new) %></span>

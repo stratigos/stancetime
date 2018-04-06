@@ -1,0 +1,18 @@
+<h2>Show Stance</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @stance.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @stance.description %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: admin_stance_path(@conn, :edit, @stance) %></span>
+<span><%= link "Back", to: admin_stance_path(@conn, :index) %></span>
