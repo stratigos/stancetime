@@ -10,8 +10,6 @@ import fetchStances from "./actions/fetch_stances";
 import AppStore from "./stores/AppStore";
 import ReactApp from "./components/ReactApp";
 
-// import "./assets/stylesheets/index.scss";
-
 // Initialize application state.
 AppStore.dispatch( fetchStances() );
 

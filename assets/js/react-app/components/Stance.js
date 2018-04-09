@@ -9,15 +9,13 @@ import PropTypes from "prop-types";
 const Stance = (props) => {
 
   return(
-    <div className="stance-container">
-      <ul>
-        <li>
-          <strong>Name: </strong>{props.stance.name}
-        </li>
-        <li>
-          <strong>Description: </strong>{props.stance.description.substring(0, 30)}&hellip;
-        </li>
-      </ul>
+    <div className="stance-container card border-secondary bg-dark">
+      <div className="card-body">
+        <h5 className="card-title text-info">{props.stance.name}</h5>
+        <p className="card-text">{props.stance.description.substring(0, 30)}&hellip;</p>
+        <a href="#" class="card-link">Practice</a>
+        <a href="#" class="card-link">More Info</a>
+      </div>
     </div>
   );
 

@@ -3,9 +3,8 @@ import Stance from "./Stance";
 
 const StancesList = ({ stances }) => {
   return(
-    <div className="crafter-list-container">
+    <div className="stances-list-container d-flex justify-content-around">
       {stances.map( (stanceRecord) => {
-        console.log("stance", stanceRecord);
         return(<Stance key={stanceRecord.stance.id} stance={stanceRecord.stance} />);
       })}
     </div>
