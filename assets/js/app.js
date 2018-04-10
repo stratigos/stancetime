@@ -18,6 +18,6 @@ import "phoenix_html"
 // Local files can be imported directly using relative
 // paths "./socket" or full ones "web/static/js/socket".
 
-import "./react-app/ReactApp"
+import "./react-app/stancetime_react_app"
 
 // import socket from "./socket"
